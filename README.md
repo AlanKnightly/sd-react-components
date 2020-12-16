@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# 注意：
+
+@types/react, @types/react-dom 要 resolution 指定版本，防止不同 package 的版本不同导致报错，fyi：https://github.com/DefinitelyTyped/DefinitelyTyped/issues/20350
+
+# 样式选型 LESS
+
 ## Available Scripts
 
 In the project directory, you can run:
