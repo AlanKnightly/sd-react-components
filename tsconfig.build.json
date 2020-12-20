@@ -6,7 +6,13 @@
     "declaration": true, // 为每一个 ts 文件生成 .d.ts 文件
     "jsx": "react",
     "moduleResolution": "Node", // 规定寻找引入文件的路径为 node 标准
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./" /* Base directory to resolve non-absolute module names. */,
+    "paths": {
+      "@/*": ["src/*"],
+      "components/*": ["./src/components/*"],
+      "styles/*": ["./src/styles/*"]
+    }
   },
   "include": [
     // 要编译哪些文件

@@ -14,7 +14,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": "./" /* Base directory to resolve non-absolute module names. */,
+    "paths": {
+      "@/*": ["src/*"],
+      "components/*": ["./src/components/*"],
+      "styles/*": ["./src/styles/*"]
+    }
   },
   "include": ["src"]
 }
