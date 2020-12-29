@@ -5,7 +5,7 @@ type PageDataType = {
   [pname: number]: any;
 };
 
-type CityCardProps = {
+export type CityCardProps = {
   pageSize: number;
   data: any[];
 };
