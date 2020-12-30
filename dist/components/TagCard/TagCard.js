@@ -2,7 +2,10 @@ import { Card, Pagination } from "antd";
 import * as _ from "lodash";
 import * as React from "react";
 var useState = React.useState, useMemo = React.useMemo, useEffect = React.useEffect;
-var CityCard = function (props) {
+/**
+ * 这是一个tag墙的组件
+ */
+var TagCard = function (props) {
     var customPageSize = props.pageSize, data = props.data;
     // 当前页码
     var _a = useState(1), current = _a[0], setCurrent = _a[1];
@@ -39,4 +42,4 @@ var CityCard = function (props) {
                 " \u4E2A"),
             React.createElement(Pagination, { current: current, defaultCurrent: 1, pageSize: pageSize, total: data.length, onChange: onChange }))));
 };
-export default CityCard;
+export default TagCard;

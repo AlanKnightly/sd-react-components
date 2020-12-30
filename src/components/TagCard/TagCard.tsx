@@ -5,13 +5,21 @@ type PageDataType = {
   [pname: number]: any;
 };
 
-export type CityCardProps = {
+export interface TagCardProps {
+  /**
+   *  每页最多展示多少个tag
+   */
   pageSize: number;
-  data: any[];
-};
+  /**
+   * tag的字符串数组
+   */
+  data: string[];
+}
 const { useState, useMemo, useEffect } = React;
-
-const CityCard = (props: CityCardProps) => {
+/**
+ * 这是一个tag墙的组件
+ */
+const TagCard = (props: TagCardProps) => {
   const { pageSize: customPageSize, data } = props;
   // 当前页码
   const [current, setCurrent] = useState<number>(1);
@@ -62,4 +70,4 @@ const CityCard = (props: CityCardProps) => {
   );
 };
 
-export default CityCard;
+export default TagCard;
