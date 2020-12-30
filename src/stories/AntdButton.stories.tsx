@@ -33,11 +33,11 @@ export default {
       },
     },
   },
-  parameters: {
-    docs: {
-      page: () => <span>这是当前组件的文档</span>,
-    },
-  },
+  // parameters: {
+  //   docs: {
+  //     page: () => <span>这是当前组件的文档</span>,
+  //   },
+  // },
 } as Meta;
 
 const Template: Story<ButtonProps> = (args) => <AntdButton {...args} />;

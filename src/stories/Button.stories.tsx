@@ -9,10 +9,6 @@ export default {
   argTypes: {
     backgroundColor: {
       control: "color",
-      // table: {
-      //   summary: "sasd",
-      //   detail: "asdada",
-      // },
     },
   },
 } as Meta;
@@ -24,6 +20,13 @@ Primary.args = {
   primary: true,
   label: "Button",
 };
+
+
+
+
+
+
+
 
 export const Secondary = Template.bind({});
 Secondary.args = {
