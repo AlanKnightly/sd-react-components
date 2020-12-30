@@ -1,4 +1,5 @@
 /// <reference types="react" />
+import "./style/index.less";
 export declare type CityCardProps = {
     pageSize: number;
     data: any[];

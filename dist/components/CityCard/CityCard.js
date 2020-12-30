@@ -1,6 +1,7 @@
 import { Card, Pagination } from "antd";
 import * as _ from "lodash";
 import * as React from "react";
+import "./style/index.less";
 var useState = React.useState, useMemo = React.useMemo, useEffect = React.useEffect;
 var CityCard = function (props) {
     var customPageSize = props.pageSize, data = props.data;
@@ -27,7 +28,7 @@ var CityCard = function (props) {
         }
         newPageSize && setPageSize(newPageSize);
     };
-    return (React.createElement("div", null,
+    return (React.createElement("div", { className: 'sd-tagcard' },
         React.createElement(Card, { style: { width: "90%" } },
             React.createElement("div", { className: "city-panel" }, _.get(pageData, [current], []).map(function (n) { return (React.createElement("span", { className: "city-tag" }, n)); }))),
         React.createElement("div", { className: "paging" },
