@@ -1,8 +1,5 @@
 // https://stackoverflow.com/questions/60634295/resolve-absolute-alias-imports-in-components-with-storybook
-
-
 const path = require('path');
-
 module.exports = (baseConfig) => {
   baseConfig.config.module.rules.push({
     test: /\.less$/,
