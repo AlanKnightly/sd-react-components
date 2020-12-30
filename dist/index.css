@@ -2,7 +2,7 @@
   color: red;
 }
 
-:glocal .sd-tagcard .city-panel .city-tag {
+:global .sd-tagcard .city-panel .city-tag {
   font-weight: bold;
   text-align: center;
   width: 18%;
@@ -15,6 +15,6 @@
   border: 1px solid rgba(26, 188, 156, 0.8);
   border-radius: 4px;
 }
-:glocal .sd-tagcard .paging .total {
+:global .sd-tagcard .paging .total {
   color: rgba(26, 188, 156, 0.8);
 }
