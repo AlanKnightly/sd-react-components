@@ -1,7 +1,6 @@
 import { Card, Pagination } from "antd";
 import * as _ from "lodash";
 import * as React from "react";
-import "./style/index.less";
 type PageDataType = {
   [pname: number]: any;
 };
@@ -39,7 +38,7 @@ const CityCard = (props: CityCardProps) => {
     newPageSize && setPageSize(newPageSize);
   };
   return (
-    <div className='sd-tagcard'>
+    <div className="sd-tagcard">
       <Card style={{ width: "90%" }}>
         <div className="city-panel">
           {_.get(pageData, [current], []).map((n: string | number) => (
