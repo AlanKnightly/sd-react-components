@@ -10,7 +10,6 @@ function less () {
     .pipe(dest('dist/components/'))
     .pipe(concat('index.css'))
     .pipe(dest('dist/'));
-
 };
 
 exports.default = series(less);

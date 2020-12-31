@@ -30,7 +30,7 @@
   "scripts": {
     "start": "react-scripts start",
     "original-build": "react-scripts build",
-    "build-ts": "tsc -p tsconfig.build.json",
+    "build-ts": "tsc  --declaration -p  tsconfig.build.json",
     "build-css": "lessc ./src/styles/index.less ./dist/index.css",
     "clean": "rimraf ./dist",
     "build": "npm run clean && npm run build-ts && gulp",
